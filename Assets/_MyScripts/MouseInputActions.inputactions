@@ -1,0 +1,71 @@
+{
+    "name": "MouseInputActions",
+    "maps": [
+        {
+            "name": "MouseActionMap",
+            "id": "1eb46ca1-e95a-4c6e-8332-5750095676fe",
+            "actions": [
+                {
+                    "name": "MouseClick",
+                    "type": "Button",
+                    "id": "0aa35a75-4d5c-45f2-90f0-122a208ca9d2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MousePosition",
+                    "type": "Value",
+                    "id": "1c3127bb-35cf-46d6-9230-57e5b06d9c98",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MouseWheel",
+                    "type": "Value",
+                    "id": "2a1be042-86f3-4b36-9c0d-aaabd328073d",
+                    "expectedControlType": "Axis",
+                    "processors": "Normalize(min=-120,max=120),Invert",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a7e2e556-404d-4639-8c61-e396f85ac9f7",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dbad4f59-1999-47ef-9a51-5baa64b9db62",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MousePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a910db45-62d4-4a22-bc2c-329c34d6ded8",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseWheel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
